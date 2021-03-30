@@ -78,14 +78,27 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'EGGMORNING',
+        'USER': 'somadmin',
+        'PASSWORD': 'L2dVfdeVn!',
+        'HOST': 'eggmorning-db-20200722.ccgx9jpnb7kq.ap-northeast-2.rds.amazonaws.com',
+        'PORT': 3306
     }
 }
+
+#최근코드
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+#이전코드
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
 
 
 # Password validation
