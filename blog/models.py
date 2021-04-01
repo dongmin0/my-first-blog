@@ -2,6 +2,10 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+#테스트
+from django.contrib.auth.models import AbstractBaseUser,BaseUserManager,PermissionsMixin
+from django.db import models 
+
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -18,3 +22,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+#테스트
+
+
